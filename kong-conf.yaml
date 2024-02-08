@@ -8,7 +8,7 @@ services:
      paths:
      - /foo
    plugins:
-   - name: myplugin
+   - name: "aws-sigv4"
      config:
        some_config: some_config_value
        some_other_config: some_other_config_value
