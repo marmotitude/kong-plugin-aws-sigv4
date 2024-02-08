@@ -1,4 +1,4 @@
-local PLUGIN_NAME = "myplugin"
+local PLUGIN_NAME = "aws-sigv4"
 
 local schema = {
   name = PLUGIN_NAME,
