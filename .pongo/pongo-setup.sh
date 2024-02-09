@@ -6,10 +6,11 @@ if [ "$PONGO_COMMAND" = "shell" ]; then
   # pongo shell mounts the plugin root directory as /kong-plugins
   export KONG_DECLARATIVE_CONFIG=/kong-plugin/kong-conf.yaml
 
-  # Initialize db and start kong
-  kong migrations bootstrap --force
-  kong start
+  extra_commands='
+  alias ra="curl -i --head --url \"http://localhost:8000/foo\""
+  echo "  ra    -  example request A"
+  '
+  echo "$extra_commands" >> /root/.profile
 
-  # Sample request in the plugin route
-  curl -i --head --url "http://localhost:8000/foo"
+  kong start
 fi
