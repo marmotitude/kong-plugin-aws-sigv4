@@ -4,7 +4,7 @@
 
 Can be used by the gateway to verify a received signed request, if you know the requester's secret key.
 
-AWS Signature v4 utilizes a symmetric-key approach, where both the client and the server share a common secret key (referred to as the AWS secret access key). This secret key is used to compute the signature during request signing on the client side and for signature verification on the server side.
+AWS Signature v4 utilizes a hash-based symmetric-key approach, where both the client and the server share a common secret key (referred to as the AWS secret access key). This secret key is used to compute the signature during request signing on the client side and for signature verification on the server side.
 
 ## Overview
 
