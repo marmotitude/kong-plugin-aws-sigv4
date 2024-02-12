@@ -66,3 +66,7 @@ to send requests to it (the kong API runs on port 8001 if needed for aditional s
 - https://github.com/Kong/kong-plugin/tree/master
 - https://github.com/Kong/kong-pongo
 - https://github.com/marmotitude/kong-plugin-boilerplate
+
+## Similar Plugins
+
+- https://github.com/LEGO/kong-aws-request-signing/tree/main

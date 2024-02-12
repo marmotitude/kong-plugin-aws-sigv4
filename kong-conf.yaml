@@ -10,7 +10,4 @@ services:
    plugins:
    - name: "aws-sigv4"
      config:
-       some_config: some_config_value
-       some_other_config: some_other_config_value
-
-
+       secret: 3cret000RRR
